@@ -1,0 +1,137 @@
+.container{
+    background-color: black;
+}
+.box{
+    width: 20%;
+    height: 100%;
+    background-color: violet;
+}
+
+.bigbox{
+    width: 40%;
+    height: 100%;
+    background-color: violet;
+}
+
+.biggerbox{
+    width: 60%;
+    height: 100%;
+    background-color: violet;
+}
+
+.row1{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightpink;
+}
+
+.row2{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightpink;
+}
+
+.row3{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightpink;
+}
+
+.row4{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightpink;
+}
+
+.row5{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightpink;
+}
+
+.rowbetween1{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightpink;
+}
+
+.rowbetween2{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: palevioletred;
+}
+
+.rowbetween3{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightpink;
+}
+
+.row6{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightpink;
+}
+
+.row7{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightpink;
+}
+
+.row8{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightpink;
+}
+
+.row9{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightpink;
+}
+
+.row10{
+    height: 20vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightpink;
+}

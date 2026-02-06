@@ -1,0 +1,84 @@
+.container{
+    height: 100vh;
+    background-color: lawngreen;
+    margin: 0;
+    display: flex;
+}
+.box1{
+    height: 100%;
+    width: 20%;
+    background-color: lavender;
+}
+.box1_1{
+    height: 50%;
+    width: 100%;
+    background-color:pink;
+    background-image: url(https://media.tenor.com/hrNgzrZF5rUAAAAe/minion.png);
+    background-size: 100%, 100%;
+}
+.box1_2{
+    height: 50%;
+    width: 100%;
+    background-color: blueviolet;
+    background-image: url(https://media1.tenor.com/m/RV0H8QvfzTIAAAAC/burgerkingguy.gif);
+
+}
+.box2{
+    height: 100%;
+    width: 80%;
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box2_1{
+    height: 25%;
+    width: 50%;
+    background-color:lightskyblue;
+    background-image: url(https://i.pinimg.com/736x/59/98/d8/5998d8fa377afe314acd674163b6b3d4.jpg);
+    background-size: 30%, 100%;
+}
+.box2_2{
+    height: 25%;
+    width: 50%;
+    background-color: yellowgreen;
+    background-image: url(https://media1.tenor.com/m/ndmoHqg8xikAAAAC/brian-family-guy.gif);
+    background-size: 35%, 100%;
+}
+.box2_3{
+    height: 75%;
+    width: 75%;
+    background-color:turquoise;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(https://i.pinimg.com/1200x/cb/a1/4c/cba14c0b7b1668f738f815096a6f6bde.jpg);
+    background-size: 25%, 25%;
+}
+.box2_4{
+    height: 75%;
+    width: 25%;
+    background-color:brown;
+    background-image: url(https://i.pinimg.com/736x/78/dc/84/78dc84e1ef208986012b59038515ed84.jpg);
+    background-size: 100%, 100%;
+
+}
+.box2_3_1{
+    height: 50%;
+    width: 35%;
+    background-color: gold;
+    background-image: url(https://www.targetaid.com/media/s4gir5yz/peter-griffin-helps-feed-african-children-in-need-v0-wjl9r6sffk8d1-2096553557.jpeg?v=1dc1664410c2d50);
+    background-size: 100%, 100%;
+}
+.box2_3_2{
+    height: 50%;
+    width: 65%;
+    background-color: peru;
+    background-image: url(https://i.pinimg.com/736x/da/76/02/da7602a7bebd58cd447c7ccf8674583d.jpg);
+    background-size: 30%, 100%;
+}
+.box2_3_3{
+    height:50% ;
+    width: 65%;
+    background-color: royalblue;
+    background-image: url(https://i.makeagif.com/media/11-27-2023/Uii6jU.gif);
+    background-size: 20%, 100%;
+}

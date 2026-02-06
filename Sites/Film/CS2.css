@@ -1,0 +1,90 @@
+body{
+  background-color: black;
+    margin: auto;
+    display: grid;
+}
+/* Stop reading this!!! */
+.container {
+  display: grid;
+  row-gap: 75px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  padding: 10px;
+  justify-content: center;
+
+}
+.container div {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: url(Images/cursor.png), crosshair;
+}
+.rainbowtext {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-top: 1rem;
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-animation: rainbow 5s infinite; 
+}
+  @-webkit-keyframes rainbow{
+    0%{color: orange;}  
+    10%{color: purple;} 
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+}
+p {
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.8em;
+  padding: 0.2em;
+}
+#flashlight {
+  --Xpos: 50vw;
+  --Ypos: 50vh;
+}
+/* I said stop reading this!!!!!!!!!!! */
+#flashlight:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 800%;
+  position: absolute;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 12em at var(--Xpos) var(--Ypos),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1)
+  );
+}
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+.rotate {
+  animation: rotation 0.5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

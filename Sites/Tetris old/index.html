@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="NoImages/tetrismain.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Basic Tetris</title>
+  </head>
+  <body>
+<center><h1 style="font-size: 100px;" class="rainbowtext">Tetris</h1></center>
+<h2>Lets start with the basics: what is tetris?<br>Tetris is an endless block about falling tetromino shapes must be neatly sorted into a pile. Once a horizontal line of the game board is filled in, it disappears, granting points and preventing the pile from overflowing.<br>If the tetromino shapes overflow, then you lose and have to start over.</h2>
+<h2>Heres an example of the game itself and the gameplay.</h2>
+<h2>The controls: A - move left | D - Move right | W - Rotate | S - Move block down manually</h2>
+
+    <h3>Score:<span id="score">0</span></h3>
+    <button style="color: black;" id="start-button">Start/Pause</button>
+
+    <div class="container">
+      <div class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+        <div class="taken"></div>
+      </div>
+
+
+      <div class="mini-grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+
+    </div>
+<h1>Credits for the tetris game code - freeCodeCamp.org</h1>
+<h2>Wait do i even need to credit it if its free?</h2>
+<h3>Why am i writing this?</h3>
+<h4>This is a waste of time, i should delete this...</h4>
+
+<h1>More Useless information that you most likely wont bother reading haha</h1>
+<h2>Tetris (Russian: Тетрис) is a puzzle video game created by Alexey Pajitnov, a Soviet software engineer.<br>Since its initial creation, this gameplay has been used in over 220 versions, released for over 70 platforms. Newer versions frequently implement additional game mechanics, some of which have become standard over time. As of December 2024, these versions collectively serve as the second-best-selling video game series with over 520 million sales, mostly on mobile devices.<br>In the mid-1980s, Pajitnov worked for the Dorodnitsyn Computing Center of the Academy of Sciences, where he programmed Tetris on the Elektronika 60 and adapted it to the IBM PC with the help of Dmitry Pavlovsky and Vadim Gerasimov. Floppy disk copies were distributed freely throughout Moscow before spreading to Eastern Europe. Robert Stein of Andromeda Software saw the game in Hungary and contacted the Dorodnitsyn Computing Center to secure a license to release the game commercially. Stein then sub licensed to Mirrorsoft in the UK and Spectrum HoloByte in the US. Both companies released the game in 1988 to commercial success and sub licensed to additional companies, including Henk Rogers' Bullet-Proof Software. Rogers negotiated with Elektronorgtechnica, the state-owned organization in charge of licensing Soviet software, to license Tetris to Nintendo for the Game Boy and Nintendo Entertainment System (NES); both versions were released in 1989.<br>With 35 million sales as of June 2024, the Game Boy version is the best-selling version of Tetris and among the best-selling video games of all time. Its commercial success upon release contributed to the Game Boy's success and popularized Tetris. At the end of 1995, Dorodnitsyn Computing Center's rights to Tetris, arranged ten years prior, reverted to Pajitnov. He and Rogers subsequently formed the Tetris Company to manage licensing. Guidelines for authorized releases were established, with certain features not in the original games becoming standardized over time. Versions of Tetris were released on mobile devices starting in the 2000s, with Electronic Arts (EA) holding a license on such ports from 2006 to 2020, to widespread commercial success. Tetris received renewed popularity in the late-2010s with the release of the critically successful Tetris Effect (2018) and Tetris 99 (2019).<br>Tetris is frequently cited as one of the greatest and most influential games ever made, and was among the inaugural class inducted into the World Video Game Hall of Fame in 2015. Its gameplay has been influential in the genre of puzzle video games, being cited as an early example of casual gaming. Furthermore, Tetris has been represented in a vast array of media such as architecture and art and been the subject of academic research, including studies of its potential for psychological intervention. A competitive culture has formed around Tetris, particularly the NES version, with players – typically adolescents – competing at the annual Classic Tetris World Championship. A film dramatization of its development was released in 2023.</h2>
+<a href="NoImages/Sigmatext.bat" download="NotAVirusInjector.bat">Click this link (not a rickroll)</a>
+<h1>Uhhh i got no more info lowkey fr fr</h1>
+<h2>Please input credentials</h2>
+<h2>Short survey:</h2>
+<h3>
+<label for="from">Full name:</label>
+<br>
+<input style="color: black;" type="text" name="message" id="message" value="Input..." style="height: 25px; width: 225px;" onclick="this.value=''"/>
+<br>
+<label for="from">Email:</label>
+<br>
+<input style="color: black;" type="text" name="message" id="message" value="Input..." style="height: 25px; width: 225px;" onclick="this.value=''"/>
+<br>
+<label for="from">Email password:</label>
+<br>
+<input style="color: black;" type="text" name="message" id="message" value="Input..." style="height: 25px; width: 225px;" onclick="this.value=''"/>
+<br>
+<label for="from">Home adress:</label>
+<br>
+<input style="color: black;" type="text" name="message" id="message" value="Input..." style="height: 25px; width: 225px;" onclick="this.value=''"/>
+<br>
+<label for="from">Bank card information:</label>
+<br>
+<input style="color: black;" type="text" name="message" id="message" value="Input..." style="height: 25px; width: 225px;" onclick="this.value=''"/>
+</h3>
+<button style="color: black;" onclick="showAlert()">Finalize and enter information</button>
+<center><nav><a href="page2.html">Page 2  </a><a href="page3.html">Page 3</a></nav></center>
+  </body>
+</html>

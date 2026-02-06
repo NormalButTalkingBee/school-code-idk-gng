@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="counterpos">
+        <p style="font-size: 30px;">Robux: <a id="clicks">0</a></p>
+    </div>
+    <script type="text/javascript">
+    var clicks = 0;
+    function click() {
+        console.log(clicks)
+        document.getElementById("clicks").innerHTML = clicks;
+        requestAnimationFrame(click)
+    };
+    click();
+    </script>
+
+<center><p style="font-size: 55px; color: limegreen;">Free robux generator</p></center>
+<h1>Click to generate FREE ROBUX</h1>
+
+<center><button style="font-size: 45px;" type="button" onclick="clicks += 1">ROBUX Button</button></center>
+<div class="claimloc">
+<h1>Enter account information to claim!
+</h1>
+<h2>Account username: <textarea name="" id=""></textarea></h2>
+<h2>Account password: <textarea name="" id=""></textarea></h2> 
+<h2>Account email (if have one): <textarea name="" id=""></textarea></h2>
+<h2>Account email password (if email connected): <textarea name="" id=""></textarea></h2> 
+<button>Claim robux!</button>
+</div>
+
+</body>
